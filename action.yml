@@ -16,9 +16,9 @@ runs:
       run: pip3 install --upgrade setuptools pip
       shell: bash
       
-    - run: pip3 install awsebcli --upgrade 
+    - run: pip3 install awsebcli --user --upgrade 
       shell: bash
-    - run: export PATH="/home/runner/.local/bin:$PATH"
+    - run: export PATH="~/.local/bin:$PATH"
       shell: bash
-    - run: eb --version 
+    - run: ls -al ~/.local/bin &&  eb --version 
       shell: bash
