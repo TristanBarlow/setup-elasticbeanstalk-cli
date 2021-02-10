@@ -7,5 +7,6 @@
 ## Example usage
 
 ```YAML
-uses: tristanbarlow/setup-elasticbeanstalk-cli@v1.0.0
+- uses: tristanbarlow/setup-elasticbeanstalk-cli@v1.0.0
+- run: eb --version
 ```
