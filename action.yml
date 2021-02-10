@@ -14,6 +14,7 @@ runs:
   steps:
     - name: Update apt
       run: sudo apt update
+      shell: bash
     - name: Install python 3
       run: sudo apt install python3.7 python3-setuptools
       shell: bash
