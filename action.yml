@@ -1,0 +1,18 @@
+# action.yml
+name: 'Setup AWS elasticbeanstalk cli'
+
+author: Tristan Barlow
+
+description: 'Setup AWS elasticbeanstalk cli for use in all future steps'
+
+branding:
+  icon: 'terminal'  
+  color: 'blue'
+
+runs:
+  steps:
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - run: pip install --upgrade pip awsebcli
