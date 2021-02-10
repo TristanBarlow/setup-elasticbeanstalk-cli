@@ -19,5 +19,6 @@ runs:
     - run: pip3 install awsebcli --upgrade 
       shell: bash
     - run: export PATH="/home/runner/.local/bin:$PATH"
+      shell: bash
     - run: eb --version 
       shell: bash
