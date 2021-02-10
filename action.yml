@@ -13,7 +13,7 @@ runs:
   using: "composite"
   steps:
     - name: Install python 3
-      run: apt install python3.8
+      run: sudo apt install python3.8
       shell: bash
     - run: pip install --upgrade pip awsebcli
       shell: bash
