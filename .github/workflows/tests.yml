@@ -1,9 +1,5 @@
 name: Run tests
-on: 
-  push:
-    paths-ignore:
-      - '*.md'
-      - LICENCE
+on: push
 
 jobs:
   test:
