@@ -12,8 +12,10 @@ branding:
 runs:
   using: "composite"
   steps:
+    - name: Update apt
+      run: sudo apt update
     - name: Install python 3
-      run: sudo apt install python3.7
+      run: sudo apt install python3.7 python3-setuptools
       shell: bash
     - run: pip3 install awsebcli --upgrade --user
       shell: bash
