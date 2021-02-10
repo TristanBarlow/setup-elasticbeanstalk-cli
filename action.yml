@@ -20,5 +20,7 @@ runs:
       shell: bash
     - run: export PATH="~/.local/bin:$PATH"
       shell: bash
+    - run: echo "${HOME}/.local/bin" >> $GITHUB_PATH
+      shell: bash
     - run: ls -al ~/.local/bin && ~/.local/bin/eb --version 
       shell: bash
