@@ -12,15 +12,12 @@ branding:
 runs:
   using: "composite"
   steps:
-    - name: Install python 3
-      run: sudo apt install python3.9
-      shell: bash
-
     - name: Upgrade Pip
       run: pip3 install --upgrade setuptools pip
       shell: bash
       
     - run: pip3 install awsebcli --upgrade 
       shell: bash
-    - run: pip3 show awsebcli &&  eb --version 
+    - run: export PATH="/home/runner/.local/bin:$PATH"
+    - run: eb --version 
       shell: bash
