@@ -17,12 +17,16 @@ runs:
       shell: bash
 
     - name: Upgrade Pip
-      run: pip3 install --upgrade setuptools pip --user
+      run: pip3 install --upgrade setuptools pip
       shell: bash
     
     - name: export path
-      run: export PATH="/root/.local/bin:$PATH"
+      run: export PATH="~/.local/bin:$PATH"
       shell: bash
       
-    - run: pip3 install awsebcli --upgrade --user
+    - run: pip3 install awsebcli --upgrade
+      shell: bash
+
+    - name: list path
+      run: ls -al ~/.local/bin:$PATH
       shell: bash
