@@ -15,12 +15,7 @@ runs:
     - name: Upgrade Pip
       run: pip3 install --upgrade setuptools pip
       shell: bash
-      
     - run: pip3 install awsebcli --user --upgrade 
       shell: bash
-    - run: export PATH="~/.local/bin:$PATH"
-      shell: bash
     - run: echo "${HOME}/.local/bin" >> $GITHUB_PATH
-      shell: bash
-    - run: ls -al ~/.local/bin && ~/.local/bin/eb --version 
       shell: bash
