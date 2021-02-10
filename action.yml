@@ -13,20 +13,14 @@ runs:
   using: "composite"
   steps:
     - name: Install python 3
-      run: sudo apt install python3.7
+      run: sudo apt install python3.9
       shell: bash
 
     - name: Upgrade Pip
-      run: pip3 install --upgrade setuptools pip
-      shell: bash
-    
-    - name: export path
-      run: export PATH="~/.local/bin:$PATH"
+      run: pip install --upgrade setuptools pip
       shell: bash
       
-    - run: pip3 install awsebcli --upgrade
+    - run: pip3 install awsebcli --upgrade 
       shell: bash
-
-    - name: list path
-      run: ls -al ~/.local/bin:$PATH
+    - run: pip3 show awsebcli &&  eb --version 
       shell: bash
