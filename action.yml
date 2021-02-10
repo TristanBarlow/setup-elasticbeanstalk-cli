@@ -20,5 +20,5 @@ runs:
       shell: bash
     - run: export PATH="~/.local/bin:$PATH"
       shell: bash
-    - run: ls -al ~/.local/bin &&  eb --version 
+    - run: ls -al ~/.local/bin && ~/.local/bin/eb --version 
       shell: bash
