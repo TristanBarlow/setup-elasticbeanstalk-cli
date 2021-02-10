@@ -17,7 +17,7 @@ runs:
       shell: bash
 
     - name: Upgrade Pip
-      run: pip install --upgrade setuptools pip
+      run: pip3 install --upgrade setuptools pip
       shell: bash
       
     - run: pip3 install awsebcli --upgrade 
