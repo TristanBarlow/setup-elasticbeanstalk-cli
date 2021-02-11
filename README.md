@@ -1,4 +1,4 @@
-# Setup AWS elasticbeanstalk cli
+# Setup AWS Elastic Beanstalk / elasticbeanstalk cli
 
 ![Run tests](https://github.com/tristanbarlow/setup-elasticbeanstalk-cli/workflows/Run%20tests/badge.svg)
 
